@@ -22,7 +22,7 @@ setlocal iskeyword=35,36,37,42,43,45,47,48,49,50,51,52,53,54,55,56,57,58,60,61,6
 
 syn case match 
 
-syn cluster ListCluster contains=TOP,ParenError2,CurlyError2,SquareError2,Curly0,Curly1,Curly2,Curly3,Curly4,Curly5,Curly6,Curly7,Curly8,Curly9,Curly0,Curly1,Curly2,Curly3,Curly4,Curly5,Curly6,Curly7,Curly8,Curly9,Square0,Square1,Square2,Square3,Square4,Square5,Square6,Square7,Square8,Square9,Angle0,Angle1,Angle2,Angle3,Angle4,Angle5,Angle6,Angle7,Angle8,Angle9
+syn cluster ListCluster contains=TOP,ParenError2,CurlyError2,SquareError2,AngleError2,Curly0,Curly1,Curly2,Curly3,Curly4,Curly5,Curly6,Curly7,Curly8,Curly9,Curly0,Curly1,Curly2,Curly3,Curly4,Curly5,Curly6,Curly7,Curly8,Curly9,Square0,Square1,Square2,Square3,Square4,Square5,Square6,Square7,Square8,Square9,Angle0,Angle1,Angle2,Angle3,Angle4,Angle5,Angle6,Angle7,Angle8,Angle9
 
 syn match CurlyError display "}"
 syn match SquareError display "]"
@@ -91,6 +91,8 @@ hi def link ParenError2 Error
 hi def link CurlyError Error
 hi def link SquareError Error
 hi def link CurlyError2 Error
+hi def link AngleError Error
+hi def link AngleError2 Error
 hi def link SquareError2 Error
 hi def link QuoteString String
 hi def link SquareString String
