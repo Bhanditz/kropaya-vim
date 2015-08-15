@@ -35,49 +35,49 @@ syn match ParenError2 display ")" contained
 syn match AngleError display ">" 
 syn match AngleError2 display ">" contained
 
-syn region Paren0 matchgroup=hlLevel0 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel0 end=")" contains=@ListCluster,Paren1,Curly1,Square1,Angle1 
-syn region Paren1 matchgroup=hlLevel1 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel1 end=")" contains=@ListCluster,Paren2,Curly2,Square2,Angle2 contained 
-syn region Paren2 matchgroup=hlLevel2 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel2 end=")" contains=@ListCluster,Paren3,Curly3,Square3,Angle3 contained 
-syn region Paren3 matchgroup=hlLevel3 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel3 end=")" contains=@ListCluster,Paren4,Curly4,Square4,Angle4 contained 
-syn region Paren4 matchgroup=hlLevel4 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel4 end=")" contains=@ListCluster,Paren5,Curly5,Square5,Angle5 contained 
-syn region Paren5 matchgroup=hlLevel5 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel5 end=")" contains=@ListCluster,Paren6,Curly6,Square6,Angle6 contained 
-syn region Paren6 matchgroup=hlLevel6 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel6 end=")" contains=@ListCluster,Paren7,Curly7,Square7,Angle7  contained 
-syn region Paren7 matchgroup=hlLevel7 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel7 end=")" contains=@ListCluster,Paren8,Curly8,Square8,Angle8 contained 
-syn region Paren8 matchgroup=hlLevel8 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel8 end=")" contains=@ListCluster,Paren9,Curly9,Square9,Angle9 contained 
-syn region Paren9 matchgroup=hlLevel9 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" skip="|..\{-}|" matchgroup=hlLevel9 end=")" contains=@ListCluster,Paren0,Curly0,Square0,Angle0 contained 
+syn region Paren0 matchgroup=hlLevel0 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel0 end=")" contains=@ListCluster,Paren1,Curly1,Square1,Angle1 
+syn region Paren1 matchgroup=hlLevel1 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel1 end=")" contains=@ListCluster,Paren2,Curly2,Square2,Angle2 contained 
+syn region Paren2 matchgroup=hlLevel2 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel2 end=")" contains=@ListCluster,Paren3,Curly3,Square3,Angle3 contained 
+syn region Paren3 matchgroup=hlLevel3 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel3 end=")" contains=@ListCluster,Paren4,Curly4,Square4,Angle4 contained 
+syn region Paren4 matchgroup=hlLevel4 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel4 end=")" contains=@ListCluster,Paren5,Curly5,Square5,Angle5 contained 
+syn region Paren5 matchgroup=hlLevel5 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel5 end=")" contains=@ListCluster,Paren6,Curly6,Square6,Angle6 contained 
+syn region Paren6 matchgroup=hlLevel6 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel6 end=")" contains=@ListCluster,Paren7,Curly7,Square7,Angle7  contained 
+syn region Paren7 matchgroup=hlLevel7 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel7 end=")" contains=@ListCluster,Paren8,Curly8,Square8,Angle8 contained 
+syn region Paren8 matchgroup=hlLevel8 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel8 end=")" contains=@ListCluster,Paren9,Curly9,Square9,Angle9 contained 
+syn region Paren9 matchgroup=hlLevel9 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=(" matchgroup=hlLevel9 end=")" contains=@ListCluster,Paren0,Curly0,Square0,Angle0 contained 
 
-syn region Curly0 matchgroup=hlLevel0 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel0 end="}" contains=@ListCluster,Curly1,Paren1,Square1,Angle1 
-syn region Curly1 matchgroup=hlLevel1 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel1 end="}" contains=@ListCluster,Curly2,Paren2,Square2,Angle2 contained 
-syn region Curly2 matchgroup=hlLevel2 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel2 end="}" contains=@ListCluster,Curly3,Paren3,Square3,Angle3 contained 
-syn region Curly3 matchgroup=hlLevel3 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel3 end="}" contains=@ListCluster,Curly4,Paren4,Square4,Angle4 contained 
-syn region Curly4 matchgroup=hlLevel4 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel4 end="}" contains=@ListCluster,Curly5,Paren5,Square5,Angle5 contained 
-syn region Curly5 matchgroup=hlLevel5 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel5 end="}" contains=@ListCluster,Curly6,Paren6,Square6,Angle6 contained 
-syn region Curly6 matchgroup=hlLevel6 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel6 end="}" contains=@ListCluster,Curly7,Paren7,Square7,Angle7 contained 
-syn region Curly7 matchgroup=hlLevel7 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel7 end="}" contains=@ListCluster,Curly8,Paren8,Square8,Angle8 contained 
-syn region Curly8 matchgroup=hlLevel8 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel8 end="}" contains=@ListCluster,Curly9,Paren9,Square9,Angle9 contained 
-syn region Curly9 matchgroup=hlLevel9 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" skip="|..\{-}|" matchgroup=hlLevel9 end="}" contains=@ListCluster,Curly0,Paren0,Square0,Angle0 contained 
+syn region Curly0 matchgroup=hlLevel0 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel0 end="}" contains=@ListCluster,Curly1,Paren1,Square1,Angle1 
+syn region Curly1 matchgroup=hlLevel1 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel1 end="}" contains=@ListCluster,Curly2,Paren2,Square2,Angle2 contained 
+syn region Curly2 matchgroup=hlLevel2 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel2 end="}" contains=@ListCluster,Curly3,Paren3,Square3,Angle3 contained 
+syn region Curly3 matchgroup=hlLevel3 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel3 end="}" contains=@ListCluster,Curly4,Paren4,Square4,Angle4 contained 
+syn region Curly4 matchgroup=hlLevel4 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel4 end="}" contains=@ListCluster,Curly5,Paren5,Square5,Angle5 contained 
+syn region Curly5 matchgroup=hlLevel5 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel5 end="}" contains=@ListCluster,Curly6,Paren6,Square6,Angle6 contained 
+syn region Curly6 matchgroup=hlLevel6 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel6 end="}" contains=@ListCluster,Curly7,Paren7,Square7,Angle7 contained 
+syn region Curly7 matchgroup=hlLevel7 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel7 end="}" contains=@ListCluster,Curly8,Paren8,Square8,Angle8 contained 
+syn region Curly8 matchgroup=hlLevel8 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel8 end="}" contains=@ListCluster,Curly9,Paren9,Square9,Angle9 contained 
+syn region Curly9 matchgroup=hlLevel9 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\={" matchgroup=hlLevel9 end="}" contains=@ListCluster,Curly0,Paren0,Square0,Angle0 contained 
 
-syn region Square0 matchgroup=hlLevel0 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel0 end="]" contains=@ListCluster,Square1,Paren1,Curly1,Angle1 
-syn region Square1 matchgroup=hlLevel1 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel1 end="]" contains=@ListCluster,Square2,Paren2,Curly2,Angle2 contained 
-syn region Square2 matchgroup=hlLevel2 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel2 end="]" contains=@ListCluster,Square3,Paren3,Curly3,Angle3 contained 
-syn region Square3 matchgroup=hlLevel3 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel3 end="]" contains=@ListCluster,Square4,Paren4,Curly4,Angle4 contained 
-syn region Square4 matchgroup=hlLevel4 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel4 end="]" contains=@ListCluster,Square5,Paren5,Curly5,Angle5 contained 
-syn region Square5 matchgroup=hlLevel5 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel5 end="]" contains=@ListCluster,Square6,Paren6,Curly6,Angle6 contained 
-syn region Square6 matchgroup=hlLevel6 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel6 end="]" contains=@ListCluster,Square7,Paren7,Curly7,Angle7 contained 
-syn region Square7 matchgroup=hlLevel7 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel7 end="]" contains=@ListCluster,Square8,Paren8,Curly8,Angle8 contained 
-syn region Square8 matchgroup=hlLevel8 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel8 end="]" contains=@ListCluster,Square9,Paren9,Curly9,Angle9 contained 
-syn region Square9 matchgroup=hlLevel9 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" skip="|..\{-}|" matchgroup=hlLevel9 end="]" contains=@ListCluster,Square0,Paren0,Curly0,Angle0 contained 
+syn region Square0 matchgroup=hlLevel0 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel0 end="]" contains=@ListCluster,Square1,Paren1,Curly1,Angle1 
+syn region Square1 matchgroup=hlLevel1 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel1 end="]" contains=@ListCluster,Square2,Paren2,Curly2,Angle2 contained 
+syn region Square2 matchgroup=hlLevel2 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel2 end="]" contains=@ListCluster,Square3,Paren3,Curly3,Angle3 contained 
+syn region Square3 matchgroup=hlLevel3 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel3 end="]" contains=@ListCluster,Square4,Paren4,Curly4,Angle4 contained 
+syn region Square4 matchgroup=hlLevel4 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel4 end="]" contains=@ListCluster,Square5,Paren5,Curly5,Angle5 contained 
+syn region Square5 matchgroup=hlLevel5 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel5 end="]" contains=@ListCluster,Square6,Paren6,Curly6,Angle6 contained 
+syn region Square6 matchgroup=hlLevel6 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel6 end="]" contains=@ListCluster,Square7,Paren7,Curly7,Angle7 contained 
+syn region Square7 matchgroup=hlLevel7 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel7 end="]" contains=@ListCluster,Square8,Paren8,Curly8,Angle8 contained 
+syn region Square8 matchgroup=hlLevel8 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel8 end="]" contains=@ListCluster,Square9,Paren9,Curly9,Angle9 contained 
+syn region Square9 matchgroup=hlLevel9 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=\[" matchgroup=hlLevel9 end="]" contains=@ListCluster,Square0,Paren0,Curly0,Angle0 contained 
 
-syn region Angle0 matchgroup=hlLevel0 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel0 end=">" contains=@ListCluster,Angle1,Paren1,Curly1,Square1 
-syn region Angle1 matchgroup=hlLevel1 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel1 end=">" contains=@ListCluster,Angle2,Paren2,Curly2,Square2 contained 
-syn region Angle2 matchgroup=hlLevel2 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel2 end=">" contains=@ListCluster,Angle3,Paren3,Curly3,Square3 contained 
-syn region Angle3 matchgroup=hlLevel3 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel3 end=">" contains=@ListCluster,Angle4,Paren4,Curly4,Square4 contained 
-syn region Angle4 matchgroup=hlLevel4 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel4 end=">" contains=@ListCluster,Angle5,Paren5,Curly5,Square5 contained 
-syn region Angle5 matchgroup=hlLevel5 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel5 end=">" contains=@ListCluster,Angle6,Paren6,Curly6,Square6 contained 
-syn region Angle6 matchgroup=hlLevel6 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel6 end=">" contains=@ListCluster,Angle7,Paren7,Curly7,Square7 contained 
-syn region Angle7 matchgroup=hlLevel7 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel7 end=">" contains=@ListCluster,Angle8,Paren8,Curly8,Square8 contained 
-syn region Angle8 matchgroup=hlLevel8 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel8 end=">" contains=@ListCluster,Angle9,Paren9,Curly9,Square9 contained 
-syn region Angle9 matchgroup=hlLevel9 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<"  matchgroup=hlLevel9 end=">" contains=@ListCluster,Angle0,Paren0,Curly0,Square0 contained 
+syn region Angle0 matchgroup=hlLevel0 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel0 end=">" contains=@ListCluster,Angle1,Paren1,Curly1,Square1 
+syn region Angle1 matchgroup=hlLevel1 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel1 end=">" contains=@ListCluster,Angle2,Paren2,Curly2,Square2 contained 
+syn region Angle2 matchgroup=hlLevel2 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel2 end=">" contains=@ListCluster,Angle3,Paren3,Curly3,Square3 contained 
+syn region Angle3 matchgroup=hlLevel3 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel3 end=">" contains=@ListCluster,Angle4,Paren4,Curly4,Square4 contained 
+syn region Angle4 matchgroup=hlLevel4 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel4 end=">" contains=@ListCluster,Angle5,Paren5,Curly5,Square5 contained 
+syn region Angle5 matchgroup=hlLevel5 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel5 end=">" contains=@ListCluster,Angle6,Paren6,Curly6,Square6 contained 
+syn region Angle6 matchgroup=hlLevel6 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel6 end=">" contains=@ListCluster,Angle7,Paren7,Curly7,Square7 contained 
+syn region Angle7 matchgroup=hlLevel7 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel7 end=">" contains=@ListCluster,Angle8,Paren8,Curly8,Square8 contained 
+syn region Angle8 matchgroup=hlLevel8 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel8 end=">" contains=@ListCluster,Angle9,Paren9,Curly9,Square9 contained 
+syn region Angle9 matchgroup=hlLevel9 start="\%(\%(`\|'\|''\)\%([a-zA-Z0-9_:]*\)\)\=<" matchgroup=hlLevel9 end=">" contains=@ListCluster,Angle0,Paren0,Curly0,Square0 contained 
 
 
 syn region hashBang start=/^#!\// end=/$/
