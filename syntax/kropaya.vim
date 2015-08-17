@@ -85,7 +85,19 @@ syn region hashBang start=/^#!\// end=/$/
 syn region Comment start=/※/ start=/؟/ end=/$/ contains=@Spell
 syn region Comment start=/#\./ end=/\./ contains=@Spell
 
+syn keyword SigillisedKeyword %module
+syn keyword SigillisedKeyword %modules
+syn keyword SigillisedKeyword %function
+syn keyword SigillisedKeyword %functions
+syn keyword SigillisedKeyword %proc
+syn keyword SigillisedKeyword %procs
+syn keyword SigillisedKeyword %type
+syn keyword SigillisedKeyword %types
+syn keyword SigillisedKeyword %exports
+syn keyword SigillisedKeyword %begin
+syn keyword SigillisedKeyword %end
 
+hi def link SigillisedKeyword Statement
 hi def link ParenError Error
 hi def link ParenError2 Error
 hi def link CurlyError Error
