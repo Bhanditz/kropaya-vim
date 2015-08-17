@@ -96,6 +96,7 @@ syn keyword SigillisedKeyword %types
 syn keyword SigillisedKeyword %exports
 syn keyword SigillisedKeyword %begin
 syn keyword SigillisedKeyword %end
+syn keyword SigillisedKeyword %edge
 
 hi def link SigillisedKeyword Statement
 hi def link ParenError Error
