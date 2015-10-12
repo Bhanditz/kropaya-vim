@@ -88,6 +88,9 @@ syn region Comment start=/#\./ end=/\./ contains=@Spell
 syn keyword SigillisedKeyword %let
 syn keyword SigillisedKeyword %end
 syn keyword SigillisedKeyword %edge
+syn keyword SigillisedKeyword %force
+syn keyword SigillisedKeyword %return
+syn keyword SigillisedKeyword %thunk
 
 hi def link SigillisedKeyword Statement
 hi def link ParenError Error
