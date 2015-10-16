@@ -85,8 +85,8 @@ syn region hashBang start=/^#!\// end=/$/
 syn region Comment start=/※/ start=/؟/ end=/$/ contains=@Spell
 syn region Comment start=/#\./ end=/\./ contains=@Spell
 
-syn match LiteralLabelStart display /&/ nextgroup=LiteralLabelBody contained
-syn match LiteralLabelBody display "\(\([_+]+[_+:]*\)\?[a-zA-Z][a-zA-Z0-9_:$!?%=<>-]*\)\|\([~!@$%^*_=\'`/?×÷≠⧺⧻§∘≢∨∪∩□⊃∈+-]\+[:~!@$%^*_=\'`/?×÷≠⧺⧻§∘≢∨∪∩□⊃∈+-]*\)\|\(\[\\]\)\|…"
+syn match LiteralLabelStart display /&/ nextgroup=LiteralLabelBody
+syn match LiteralLabelBody display "\(\([_+]+[_+:]*\)\?[a-zA-Z][a-zA-Z0-9_:$!?%=<>-]*\)\|\([~!@$%^*_=\'`/?×÷≠⧺⧻§∘≢∨∪∩□⊃∈+-]\+[:~!@$%^*_=\'`/?×÷≠⧺⧻§∘≢∨∪∩□⊃∈+-]*\)\|\(\[\\]\)\|…" contained
 
 syn keyword SigillisedKeyword %let
 syn keyword SigillisedKeyword %end
