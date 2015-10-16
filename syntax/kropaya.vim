@@ -88,6 +88,8 @@ syn region Comment start=/#\./ end=/\./ contains=@Spell
 syn match LiteralLabelStart display /&/ nextgroup=LiteralLabelBody
 syn match LiteralLabelBody display "\(\([_+]+[_+:]*\)\?[a-zA-Z][a-zA-Z0-9_:$!?%=-]*\)\|\([~!@$%^*_=\'`/?×÷≠⧺⧻§∘≢∨∪∩□⊃∈+-]\+[:~!@$%^*_=\'`/?×÷≠⧺⧻§∘≢∨∪∩□⊃∈+-]*\)\|\(\[\\]\)\|…" contained
 
+syn region QuantifierBlock matchgroup=Quantifier start=/\(∀\|∃\|ı\|λ\|μ\)/ matchgroup=QuantifierEnd end="[.]"
+
 syn keyword SigillisedKeyword %let
 syn keyword SigillisedKeyword %end
 syn keyword SigillisedKeyword %edge
