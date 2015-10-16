@@ -85,6 +85,9 @@ syn region hashBang start=/^#!\// end=/$/
 syn region Comment start=/※/ start=/؟/ end=/$/ contains=@Spell
 syn region Comment start=/#\./ end=/\./ contains=@Spell
 
+syn match LiteralLabelStart display /&/ nextgroup=LiteralLabelBody
+syn match LiteralLabelBody display "\(\([_+]+[_+:]*\)\?[a-zA-Z][a-zA-Z0-9_:$!?%=<>-]*\)\|\([~!@$%^*_=\'`/?×÷≠⧺⧻§∘≢∨∪∩□⊃∈+-]\+[:~!@$%^*_=\'`/?×÷≠⧺⧻§∘≢∨∪∩□⊃∈+-]*\)\|\(\[\\]\)\|…"
+
 syn keyword SigillisedKeyword %let
 syn keyword SigillisedKeyword %end
 syn keyword SigillisedKeyword %edge
@@ -93,6 +96,8 @@ syn keyword SigillisedKeyword %return
 syn keyword SigillisedKeyword %thunk
 
 hi def link SigillisedKeyword Statement
+hi def link LiteralLabelStart Label
+hi def link LiteralLabelBody Label
 hi def link ParenError Error
 hi def link ParenError2 Error
 hi def link CurlyError Error
