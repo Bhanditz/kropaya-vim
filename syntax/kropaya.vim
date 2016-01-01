@@ -92,6 +92,8 @@ syn region QuantifierBlock matchgroup=Quantifier start=/\(∀\|∃\|ı\|λ\|μ\)
 
 syn keyword SigillisedKeyword %let
 syn keyword SigillisedKeyword %end
+syn keyword SigillisedKeyword %use
+syn keyword SigillisedKeyword %import
 syn keyword SigillisedKeyword %edge
 syn keyword SigillisedKeyword %force
 syn keyword SigillisedKeyword %return
