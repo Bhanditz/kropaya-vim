@@ -91,6 +91,7 @@ syn match LiteralLabelBody display "\(\(\([_+]+[_+:]*\)\?[a-zA-Z][a-zA-Z0-9_$!?%
 syn region QuantifierBlock matchgroup=Quantifier start=/\(∀\|∃\|ı\|λ\|μ\)/ matchgroup=QuantifierEnd end="[.]"
 
 syn keyword SigillisedKeyword %let
+syn keyword SigillisedKeyword %thing
 syn keyword SigillisedKeyword %end
 syn keyword SigillisedKeyword %use
 syn keyword SigillisedKeyword %import
